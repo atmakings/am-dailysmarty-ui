@@ -1,3 +1,41 @@
-.post-topic {
-    margin: 0 4px
+
+
+body {
+    font-family: 'Lato', sans-serif;
 }
+
+.app-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.logo-main,
+.recent-posts
+{
+    display: grid;
+    justify-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+$grey-one: #666666;
+$grey-two: #B3B3B3;
+$grey-three: #D8D8D8;
+$blue-one: #0079FF;
+
+.no-content {
+    color: $grey-one;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@import './mixins';
+@import './search-bar';
+@import './recent-posts';
+@import './post';
+@import './home';
+@import './results';
